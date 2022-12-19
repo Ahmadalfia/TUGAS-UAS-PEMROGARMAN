@@ -1,0 +1,80 @@
+
+
+TB NILAI
++----------+---------------+------+-----+---------+----------------+
+| id_nilai | int(10)       | NO   | PRI | NULL    | auto_increment |
+| nim      | varchar(15)   | NO   | MUL | NULL    |                |
+| kode_mk  | varchar(7)    | NO   | MUL | NULL    |                |
+| absen    | decimal(10,0) | NO   |     | NULL    |                |
+| tugas    | decimal(10,0) | NO   |     | NULL    |                |
+| uts      | decimal(10,0) | NO   |     | NULL    |                |
+| uas      | decimal(10,0) | NO   |     | NULL    |                |
++----------+---------------+------+-----+---------+----------------+
+
+INSERT INTO tb_nilai VALUES ('NULL','204855110','MK6671',90,90,90,95);
+INSERT INTO tb_nilai VALUES ('NULL','204855110','MK6672',90,90,75,85);
+INSERT INTO tb_nilai VALUES ('NULL','204855110','MK6673',80,90,95,95);
+INSERT INTO tb_nilai VALUES ('NULL','204855110','MK6674',90,70,85,75);
+INSERT INTO tb_nilai VALUES ('NULL','204855110','MK6675',90,90,95,90);
+INSERT INTO tb_nilai VALUES ('NULL','204855110','MK6676',90,80,98,85);
+INSERT INTO tb_nilai VALUES ('NULL','204855110','MK6677',90,80,95,75);
+INSERT INTO tb_nilai VALUES ('NULL','204855110','MK6678',70,90,97,90);
+INSERT INTO tb_nilai VALUES ('NULL','204855110','MK6679',90,90,95,95);
+
+
+UPDATE tb_MAHASISWA SET nim='204855100', nama='ROLIN AKBAR', jenis_kelamin='L', tempat_lahir='LOMBOK',tgl_lahir='2001-11-07', alamat='LOMBOK',kode_jurusan='55' WHERE nim='204855015' ;
+UPDATE tb_MAHASISWA SET nim='204855017', nama='M NURUL HIDAYAT', jenis_kelamin='L', tempat_lahir='LOMBOK',tgl_lahir='2001-11-07', alamat='LOMBOK',kode_jurusan='55' WHERE nim='204855031' ;
+UPDATE tb_MAHASISWA SET nim='204855093', nama='FENDI SUGIANTO', jenis_kelamin='L', tempat_lahir='LOMBOK',tgl_lahir='2001-11-07', alamat='LOMBOK',kode_jurusan='55' WHERE nim='204855097' ;
+UPDATE tb_MAHASISWA SET nim='204855078', nama='MUH FAQIH AZANDI', jenis_kelamin='L', tempat_lahir='LOMBOK',tgl_lahir='2001-11-07', alamat='LOMBOK',kode_jurusan='55' WHERE nim='204855106' ;
+UPDATE tb_MAHASISWA SET nim='204855115', nama='YUSI MUKSIN', jenis_kelamin='L', tempat_lahir='LOMBOK',tgl_lahir='2001-11-07', alamat='LOMBOK',kode_jurusan='55' WHERE nim='204855001' ;
+
+UPDATE tb_MAHASISWA SET nim='204855001', nama='AHMAD ALIFIAN', jenis_kelamin='L', tempat_lahir='LOMBOK',tgl_lahir='2001-11-07', alamat='LOMBOK',kode_jurusan='55' WHERE nim='204855017' ;
+UPDATE tb_MAHASISWA SET nim='204855026', nama='FIZURROHIM', jenis_kelamin='L', tempat_lahir='LOMBOK',tgl_lahir='2001-11-07', alamat='LOMBOK',kode_jurusan='55' WHERE nim='204855078' ;
+UPDATE tb_MAHASISWA SET nim='204855108', nama='TARUNA AMANDA', jenis_kelamin='L', tempat_lahir='LOMBOK',tgl_lahir='2001-11-07', alamat='LOMBOK',kode_jurusan='55' WHERE nim='204855114' ;
+UPDATE tb_MAHASISWA SET nim='204855020', nama='TAUFIK HIDAYAT', jenis_kelamin='L', tempat_lahir='LOMBOK',tgl_lahir='2001-11-07', alamat='LOMBOK',kode_jurusan='55' WHERE nim='204855100' ;
+UPDATE tb_MAHASISWA SET nim='204855114', nama='ZULHULIMI', jenis_kelamin='L', tempat_lahir='LOMBOK',tgl_lahir='2001-11-07', alamat='LOMBOK',kode_jurusan='55' WHERE nim='204855110' ;
+UPDATE tb_MAHASISWA SET nim='204855997', nama='AJI BAYU SAMUDRA ALIM', jenis_kelamin='L', tempat_lahir='LOMBOK',tgl_lahir='2001-11-07', alamat='LOMBOK',kode_jurusan='55' WHERE nim=' 2048551997' ;
+
+
+| 204855001 | AHMAD ALIFIAN         | L             | LOMBOK       | 2001-11-07 | LOMBOK | 55           |
+| 204855020 | TAUFIK HIDAYAT        | L             | LOMBOK       | 2001-11-07 | LOMBOK | 55           |
+| 204855026 | FIZURROHIM            | L             | LOMBOK       | 2001-11-07 | LOMBOK | 55           |
+| 204855108 | TARUNA AMANDA         | L             | LOMBOK       | 2001-11-07 | LOMBOK | 55           |
+| 204855114 | ZULHULIMI             | L             | LOMBOK       | 2001-11-07 | LOMBOK | 55           |
+| 204855997 | AJI BAYU SAMUDRA ALIM | L             | LOMBOK       | 2001-11-07 | LOMBOK | 55           |
+
+UPDATE tb_nilai SET nim='204855001' WHERE nim='204855100';
+UPDATE tb_nilai SET nim='204855020' WHERE nim='204855017';
+UPDATE tb_nilai SET nim='204855026' WHERE nim='204855093';
+UPDATE tb_nilai SET nim='204855108' WHERE nim='204855078';
+UPDATE tb_nilai SET nim='204855114' WHERE nim='204855115';
+UPDATE tb_nilai SET nim='204855997' WHERE nim='204855110';
+
+SET FOREIGN_KEY_CHECKS = 0;                             
+
+TB MAHASISWA
++-----------+------------------+---------------+--------------+------------+---------+--------------+
+| nim       | nama             | jenis_kelamin | tempat_lahir | tgl_lahir  | alamat  | kode_jurusan |
++-----------+------------------+---------------+--------------+------------+---------+--------------+
+| 204855017 | M NURUL HIDAYAT  | L             | LOMBOK       | 2001-11-07 | LOMBOK  | 55           |
+| 204855078 | MUH FAQIH AZANDI | L             | LOMBOK       | 2001-11-07 | LOMBOK  | 55           |
+| 204855093 | FENDI SUGIANTO   | L             | LOMBOK       | 2001-11-07 | LOMBOK  | 55           |
+| 204855100 | ROLIN AKBAR      | L             | LOMBOK       | 2001-11-07 | LOMBOK  | 55           |
+| 204855110 | WAHYUDI          | L             | JENGGIK      | 2023-01-01 | JENGGIK | 55           |
+| 204855115 | YUSI MUKSIN      | L             | LOMBOK       | 2001-11-07 | LOMBOK  | 55           |
++-----------+------------------+---------------+--------------+------------+---------+--------------+
+
+TB MK
++---------+---------+--------------------------+-----+
+| kode_mk | nidn    | nama_mk                  | sks |
++---------+---------+--------------------------+-----+
+| MK5579  | 2009408 | MATRIK AL-JABAR LINEAR   |   3 |
+| MK6671  | 2002420 | JARINGAN KOMPUTETR       |   3 |
+| MK6672  | 2002421 | PEMROGRAMAN              |   3 |
+| MK6673  | 2002422 | PENGOLHAN CITRA          |   3 |
+| MK6674  | 2002423 | ANALISIS SISTEM          |   3 |
+| MK6675  | 2002424 | DESAIN WEB               |   3 |
+| MK6676  | 2002425 | PENGAMANAN DATA          |   3 |
+| MK6677  | 2002426 | REKAYASA PERANGKAT LUNAK |   3 |
+| MK6678  | 2002427 | SEMINAR                  |   3 |
++---------+---------+--------------------------+-----+
